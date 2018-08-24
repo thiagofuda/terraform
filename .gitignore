@@ -5,3 +5,9 @@
 *mykey*
 *.tfstate.*
 *.retry
+*.terraform/plugins*
+*/terraform.tfvars
+*/terraform.tfstate
+*/terraform.tfstate.backup
+*/.terraform
+*/mykey*
