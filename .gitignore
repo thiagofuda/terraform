@@ -1,0 +1,7 @@
+*.tfstate
+*terraform.tfvars
+*terraform.tfstate
+*terraform.tfstate.backup
+*mykey*
+*.tfstate.*
+*.retry
