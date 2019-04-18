@@ -3,9 +3,5 @@ resource "aws_vpc" "main-infra" {
     enable_dns_support  = true 
     availability_zone = "${var.region}"
 
-    tags = {
-        Name = "vpc-in-ext"
-        Terraform = "true"
-        Environment = "dev"
-    }
+    tags = "${var.tags}"
 }

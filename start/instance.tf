@@ -1,8 +1,6 @@
-resource "aws_instance" "example" {
-  ami           = "${lookup(var.AMIS, var.AWS_REGION)}"
-  instance_type = "t2.micro"
+resource "aws_instance" "front-xdb" {
+  ami           = "${lookup(var.amis, var.region)}"
+  instance_type = "${var.typec2}"
 
-  tags {
-      Name = "Instance-EC2"
-  }
+  tags = "${var.tags}"
 }
